@@ -1,0 +1,350 @@
+/*
+To change this license header, choose License Headers in Project Properties.
+To change this template file, choose Tools | Templates
+and open the template in the editor.
+*/
+/* 
+    Created on : 2017-01-24, 19:22:06
+    Author     : Dominik Paluch <dominik.paluch@o2.pl>
+*/
+
+@mixin tr {
+    transition: all 0.6s cubic-bezier(0.25, 0.1, 0, 1.13);
+}   
+.row{
+    margin-left: 0px;
+    margin-right: 0px;
+}
+
+body{
+    background-color: #f5f5f5;
+}
+
+
+.accountPanel{
+    padding:0px;
+    font-family: 'Open Sans', sans-serif;
+    background-color: #363f48;
+    width: 100%;
+    color: white;
+    padding: 4px;
+    font-size: 10px;
+
+    .contact{
+        float: left;
+        margin-left: 120px;
+        line-height: 24px;
+
+
+        .phone{
+            float: left;
+            padding: 0px 20px;
+
+            .number{
+                padding-left: 10px;
+                float: right;
+            }
+        }
+
+        .email{
+            float: left;
+
+            .emailName{
+                padding-left: 10px;
+                float: right;
+            }
+        }
+    }
+
+    .loginPanel{
+        float: right;
+        margin-right: 120px;
+
+        a{
+            display: block;
+            padding: 5px;
+            text-decoration: none;
+            color: white;
+        }
+
+        .loginBtn{
+            background-color: #2a3239;
+            text-transform: uppercase;
+
+        }
+
+        .singUp{
+            float: left;
+
+            .signUpWord{
+                float: right;
+            }
+        }
+
+        .login{
+            float: left;
+
+            .loginBtn{
+                margin-left: 10px;
+
+                .loginWord{
+                    float: right;
+                }
+            }
+        }
+    }
+}
+
+.navbar-default {
+    background-color: white;
+    border: none;
+    @include tr;
+
+    .navbar-nav > li > a:hover{
+        color: #2b2c2d;
+        @include tr;
+    }
+}
+
+
+
+.navbar{
+    height: 75px;
+    margin-bottom: 0px;
+
+    .navbar-nav{
+        float: right;
+        padding: 0px 30px;
+        margin-right: 50px;
+
+    }
+
+    li a{
+        line-height: 44px;
+        padding-left: 30px;
+        padding-right: 30px;
+
+        &.activeMy{
+            color: red;
+        }
+        &:hover{
+            background-color: red;
+        }
+    }
+
+}
+
+.navbar-brand{
+    line-height: 35px;
+
+    .logo{
+        margin-left: 130px;
+
+        .logo-image{
+            float: left;
+        }
+
+        .logo-name{
+            float: left;
+            text-transform: lowercase;
+            font-size: 24px;
+            text-align: center;
+            font-weight: 800;
+            color: #002f58;
+            padding-left: 20px;
+            letter-spacing: 1px;
+        }
+    }
+}
+
+.nopadding {
+    padding: 0 !important;
+    margin: 0 !important;
+}
+
+.title-image{
+    margin-top: 50px;
+    text-align: center;
+
+    img{
+        width: 30px;
+    }
+}
+
+.title-description{
+    font-size: 20px;
+    text-transform: uppercase;
+    color: #002651;
+    font-weight: 700;
+    padding-top: 10px;
+    margin-bottom: 50px;
+    text-align: center;
+}
+
+.rowGallery{
+    margin-left: 120px;
+    margin-right: 120px;
+
+}
+
+.carContent{
+
+    .carPhoto{
+        float: left;
+        background-color: white;
+        border: 2px solid #e9e9e9;
+
+        img{
+            padding: 5%;
+            width: 100%;
+            padding-bottom: 4px;
+        }
+    }
+
+    .carDescription{
+        float: left;
+        text-transform: uppercase;
+        font-size: 14px;
+        font-weight: bold;
+        color: #426583;
+        width: 100%;
+
+        .paddingLeft{
+            padding-left: 17px;
+        }
+
+    }
+}
+
+.right{
+    text-align: right;  
+
+}
+
+.btn-wynajmij{
+    margin-top: 10px;
+    margin-bottom: 80px;
+
+    a{
+        color: white;
+        padding: 10px;
+        text-transform: uppercase;
+        font-size: 14px;
+        text-decoration: none;
+        background-color: #e53e0f;
+        margin-right: 17px;
+    }
+
+}
+
+.margin-bottomStyle{
+    margin-bottom: 50px;
+}
+
+#warunki{
+    margin-left: 120px;
+    margin-right: 120px;
+    color: #002651;
+}
+
+.centerTitle{
+    text-align: center;
+    margin-top: 50px;
+}
+
+footer{
+    background-color: #363f48;
+
+    .title-image{
+        margin-top: 30px;
+    }
+
+    .title-description{
+        color: white;
+    }
+
+    .contactInformation{
+        margin-right: 200px;
+        margin-left: 200px;
+        color: white;
+        text-transform: uppercase;
+        font-size: 12px;
+        margin-bottom: 50px;
+
+        .positionLocation{
+            margin-top: 7px;
+            padding-left: 25px;
+        }
+
+        .positionPhone{
+            margin-top: 10px;
+            padding-left: 20px;
+        }
+
+        .positionMail{
+            margin-top: 7px;
+            padding-left: 20px;
+        }
+    }
+
+    .navbar-default {
+        background-color: #292e34;
+        border: none;
+        @include tr;
+
+        .navbar-nav > li > a:hover{
+            color: #2b2c2d;
+            @include tr;
+        }
+    }
+
+
+
+    .navbar{
+        margin-bottom: 0px;
+
+
+        .navbar-nav{
+            float: right;
+            padding: 0px 0px;
+            margin-right: 80px;
+
+        }
+
+        li a{
+            line-height: 44px;
+            padding-left: 20px;
+            padding-right: 30px;
+
+        }
+
+    }
+
+    .navbar-brand{
+        line-height: 35px;
+
+        .logo{
+            margin-left: 240px;
+
+            .logo-image{
+                float: left;
+            }
+
+            .logo-name{
+                float: left;
+                text-transform: lowercase;
+                font-size: 14px;
+                text-align: center;
+                font-weight: 800;
+                color: #002f58;
+                padding-left: 20px;
+                letter-spacing: 1px;
+                color: white;
+            }
+        }
+    }
+
+    .navbar-default .navbar-nav > li > a {
+        color: white;
+    }
+}
