@@ -6,10 +6,12 @@
         <meta charset="UTF-8">
         <link rel="stylesheet" href="css/bootstrap.css">
         <link rel="stylesheet" type="text/css" href="css/style.css">
+        <link rel="stylesheet" type="text/css" href="css/lightbox.css">
         <link rel="stylesheet" type="text/css" href="css/fontello.css">
         <link href="https://fonts.googleapis.com/css?family=Open+Sans:800" rel="stylesheet">
         <meta name="viewport" content="width=device-width, initial-scale=1.0">
         <script src="js/jquery.js"></script>
+        <script src="js/lightbox.js"></script>
         <script src="js/bootstrap.js"></script>
     </head>
     <body>
@@ -59,10 +61,31 @@
             </div>
         </div>
         <div class="row rowGallery">
+ 
             <div class="col-md-4">
                 <div class="carContent row">
                     <div class="carPhoto">
-                        <img src="img/auto.jpg" alt="Błąd wczytywania auta">
+                        <a href="img/auto.jpg"  data-lightbox="gallery" data-title="Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua.">
+                            <img src="img/auto.jpg" alt="Błąd wczytywania auta" >
+                        </a>
+                    </div>
+                    <div class="carDescription row">
+                        <div class="col-md-6 paddingLeft">
+                            <div class="col-md-12 nopadding">lamborghini</div>
+                            <div class="col-md-12 nopadding">aventador</div>
+                        </div>
+                        <div class="col-md-6 nopadding right">
+                            <div class="btn-wynajmij"><a href="#">wynajmij</a></div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+             <div class="col-md-4">
+                <div class="carContent row">
+                    <div class="carPhoto">
+                        <a href="img/auto.jpg" data-lightbox="gallery" data-title="Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua.">
+                            <img src="img/auto.jpg" alt="Błąd wczytywania auta" >
+                        </a>
                     </div>
                     <div class="carDescription row">
                         <div class="col-md-6 paddingLeft">
@@ -78,23 +101,9 @@
             <div class="col-md-4">
                 <div class="carContent row">
                     <div class="carPhoto">
-                        <img src="img/auto.jpg" alt="Błąd wczytywania auta">
-                    </div>
-                    <div class="carDescription row">
-                        <div class="col-md-6 paddingLeft">
-                            <div class="col-md-12 nopadding">lamborghini</div>
-                            <div class="col-md-12 nopadding">aventador</div>
-                        </div>
-                        <div class="col-md-6 nopadding right">
-                            <div class="btn-wynajmij"><a href="#">wynajmij</a></div>
-                        </div>
-                    </div>
-                </div>
-            </div>
-            <div class="col-md-4">
-                <div class="carContent row">
-                    <div class="carPhoto">
-                        <img src="img/auto.jpg" alt="Błąd wczytywania auta">
+                        <a href="img/auto.jpg"  data-lightbox="gallery" data-title="Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua.">
+                            <img src="img/auto.jpg" alt="Błąd wczytywania auta" >
+                        </a>
                     </div>
                     <div class="carDescription row">
                         <div class="col-md-6 paddingLeft">

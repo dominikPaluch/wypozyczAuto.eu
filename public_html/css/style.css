@@ -44,7 +44,11 @@ body {
       display: block;
       padding: 5px;
       text-decoration: none;
-      color: white; }
+      color: white;
+      transition: all 0.6s cubic-bezier(0.25, 0.1, 0, 1.13); }
+      .accountPanel .loginPanel a:hover {
+        background-color: black;
+        transition: all 0.6s cubic-bezier(0.25, 0.1, 0, 1.13); }
     .accountPanel .loginPanel .loginBtn {
       background-color: #2a3239;
       text-transform: uppercase; }
@@ -61,10 +65,12 @@ body {
 
 .navbar-default {
   background-color: white;
-  border: none;
-  transition: all 0.6s cubic-bezier(0.25, 0.1, 0, 1.13); }
+  border: none; }
+  .navbar-default .navbar-nav > li > a {
+    transition: all 0.6s cubic-bezier(0.25, 0.1, 0, 1.13); }
   .navbar-default .navbar-nav > li > a:hover {
-    color: #2b2c2d;
+    color: black;
+    background-color: #bdc1c9;
     transition: all 0.6s cubic-bezier(0.25, 0.1, 0, 1.13); }
 
 .navbar {
@@ -159,7 +165,12 @@ body {
     font-size: 14px;
     text-decoration: none;
     background-color: #e53e0f;
-    margin-right: 17px; }
+    margin-right: 17px;
+    transition: all 0.6s cubic-bezier(0.25, 0.1, 0, 1.13); }
+    .btn-wynajmij a:hover {
+      background-color: #d8061f;
+      transition: all 0.6s cubic-bezier(0.25, 0.1, 0, 1.13);
+      font-style: italic; }
 
 .margin-bottomStyle {
   margin-bottom: 50px; }
@@ -260,7 +271,7 @@ footer {
 @media all and (max-width: 1150px) {
   .navbar .navbar-nav {
     float: right;
-    padding: 0px 100px;
+    padding: 5px 100px 0px 100px;
     margin-right: 0px;
     /* text-align: center; */
     width: 100%; }
