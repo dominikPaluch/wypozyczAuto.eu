@@ -41,19 +41,34 @@ body{
         .phone{
             float: left;
             padding: 0px 20px;
+            @include tr;
 
             .number{
                 padding-left: 10px;
                 float: right;
             }
+
+            &:hover{
+                background-color: black;
+                @include tr;
+                cursor: pointer;
+            }
         }
 
         .email{
             float: left;
+            padding: 0px 20px;
+            @include tr;
 
             .emailName{
                 padding-left: 10px;
                 float: right;
+            }
+
+            &:hover{
+                background-color: black;
+                @include tr;
+                cursor: pointer;
             }
         }
     }
@@ -109,6 +124,8 @@ body{
 
     .navbar-nav > li > a{
         transition: all 0.6s cubic-bezier(0.25, 0.1, 0, 1.13);
+        padding-left: 60px;
+        padding-right: 60px;
     }
 
     .navbar-nav > li > a:hover{
@@ -118,10 +135,23 @@ body{
     }
 }
 
+.dropdown-menu > li > a {
+    display: block;
+    padding: 5px 20px;
+    clear: both;
+    border-bottom: black 1px steelblue;
+    /* font-weight: normal; */
+    font-weight: 600;
+    line-height: 1.42857143;
+    color: #333;
+    white-space: nowrap;
+    text-align: center;
+}
+
+
 
 
 .navbar{
-    height: 75px;
     margin-bottom: 0px;
 
     .container-fluid{
@@ -130,10 +160,12 @@ body{
 
     .navbar-nav{
         float: right;
-        padding: 0px 30px;
+        //padding: 0px 30px;
         margin-right: 50px;
 
     }
+
+
 
     li a{
         line-height: 44px;
@@ -148,6 +180,17 @@ body{
         }
     }
 
+    .dropdown-menu{
+
+        li a{
+            @include tr;
+        }
+
+        li a:hover {
+            background-color: #f6f2f2;
+            @include tr;
+        }
+    }
 }
 
 
@@ -196,6 +239,7 @@ body{
     padding-top: 10px;
     margin-bottom: 50px;
     text-align: center;
+    text-shadow: 1px 1px 1px #e70000;
 }
 
 .rowGallery{
@@ -210,12 +254,36 @@ body{
         float: left;
         background-color: white;
         border: 2px solid #e9e9e9;
-        
+
 
         img{
             padding: 5%;
             width: 100%;
             padding-bottom: 4px;
+        }
+
+        .fa{
+            font-size: 24px;
+            width: 50px;
+            height: 50px;
+            border-radius: 50%;
+            color: #affc16;
+            text-align: center;
+            left: 50%;
+            transform: translateY(-50%) translateX(-50%);
+            top: 37%;
+            border: 3px solid white;
+            background-color: rgba(0,0,0,0.7);
+            line-height: 46px;
+            position: absolute;
+            opacity: 0;
+            @include tr;
+        }
+
+        &:hover{
+            .fa{
+                opacity: 1;
+            }
         }
     }
 
@@ -376,6 +444,10 @@ footer{
         color: white;
 
         &:hover{
+            color: white;
+        }
+
+        &:focus{
             color: white;
         }
     }
