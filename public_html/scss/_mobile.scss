@@ -126,7 +126,7 @@ $xs: 0;
     }
 
     footer .contactInformation {
-        font-size: 10px;;
+        font-size: 10px;
     }
 
     .container-fluid {
@@ -143,11 +143,16 @@ $xs: 0;
 }
 
 @media all and (max-width:$md){
+    
+    footer .contactInformation .positionPhone, footer .contactInformation .positionMail, footer .contactInformation .positionLocation {
+    padding-bottom: 25px;
+}
+    
 
     .col-md-3{
         margin-bottom: 20px;
     }
-    
+
     .col-md-12, .col-lg-12 {
         padding-right: 0px; 
         padding-left: 0px; 
@@ -252,7 +257,7 @@ $xs: 0;
     footer .navbar-brand .logo {
         margin-left: 0px;
         position: absolute;
-        left: 33%;
+        left: 36%;
     }
 
     .navbar-default .navbar-nav > li > a {
@@ -265,6 +270,9 @@ $xs: 0;
     }
 
 
+       footer .contactInformation .positionPhone, footer .contactInformation .positionLocation, footer .contactInformation .positionMail {
+        width: 45%;
+    }
 
 }
 
@@ -280,10 +288,13 @@ $xs: 0;
     }
 }
 @media all and (max-width:$sm){
+    
+     footer .contactInformation .positionPhone, footer .contactInformation .positionLocation, footer .contactInformation .positionMail {
+        width: 40%;
+    }
 
-    .navbar-brand .logo {
-        left: 17%;
-        position: absolute;
+    footer .navbar-brand .logo {
+        left: 26%;
     }
 
     .navbar-default .navbar-brand {
@@ -339,6 +350,8 @@ $xs: 0;
 
 @media all and (max-width: 428px){
 
+
+   
     .accountPanel {
         padding: 10px 20px;
 
@@ -394,10 +407,19 @@ $xs: 0;
     .carContent .carDescription {
         font-size: 16px;
     }
-    
+
     footer .navbar-brand .logo {
-    left: 20%;
+        left: 20%;
+    }
+
+
 }
+@media all and (max-width: 358px){
+    .carContent .carDescription {
+        padding: 10px;
+    }
 
-
+    .carContent .carDescription {
+        font-size: 14px;
+    }
 }
