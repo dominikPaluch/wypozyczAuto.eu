@@ -4,21 +4,29 @@
         <title>Wypożycz Auto</title>
         <meta name="viewport" content="width=device-width, initial-scale=1.0">
         <meta charset="UTF-8">
-        <link rel="stylesheet" href="css/bootstrap.css">
+        <style>
+            
+        </style>
         <link rel="stylesheet" type="text/css" href="css/style.css">
+        <link rel="stylesheet" type="text/css" href="css/bootstrap.css">
+        <link rel="stylesheet" type="text/css" href="css/hover.css">
         <link rel="stylesheet" type="text/css" href="css/lightbox.css">
         <link rel="stylesheet" type="text/css" href="css/fontello.css">
         <link href="https://fonts.googleapis.com/css?family=Open+Sans:800" rel="stylesheet">
+        <link href="https://maxcdn.bootstrapcdn.com/font-awesome/4.7.0/css/font-awesome.min.css" rel="stylesheet"  >
         <meta name="viewport" content="width=device-width, initial-scale=1.0">
-        <script src="js/jquery.js"></script>
         <script src="js/lightbox.js"></script>
+        <script src="js/jquery.js"></script>
         <script src="js/bootstrap.js"></script>
+        <script src="js/Gruntfile.js"></script>
+        <script src="https://ajax.googleapis.com/ajax/libs/jquery/2.2.0/jquery.min.js"></script>
+        <script src="js/jquery.scrollTo.min.js"></script>
     </head>
     <body>
         <div class="accountPanel row">
             <div class="contact">
-                <div class="phone"><i class="icon-phone"></i><div class="number">+55 417-634-7071</div></div>
-                <div class="email"><i class="icon-mail"></i><div class="emailName">sales@carhouse.com</div></div>
+                <div class="phone"><i class="icon-phone"></i><div class="number"><a href="tel:+48555555555" class="decorate-none">+48 555 555 555</a></div></div>
+                <div class="email"><i class="icon-mail"></i><div class="emailName"><a href="mailto:sales@darkhouse.eu" class="decorate-none">sales@darkhouse.eu</a></div></div>
             </div>
             <div class="loginPanel">
                 <div class="singUp">
@@ -29,62 +37,64 @@
                 </div>
             </div>
         </div>
-        <nav class="navbar navbar-default">
+        <nav class="navbar navbar-default">                                                                                 
             <div class="container-fluid">
                 <div class="navbar-header">
-                    <a class="navbar-brand" href="#">
+                    <div class="navbar-brand">
+                        <button type="button" class="navbar-toggle" data-toggle="collapse" data-target=".navbar-collapse">
+                            <span class="icon-bar"></span>
+                            <span class="icon-bar"></span>
+                            <span class="icon-bar"></span>
+                        </button>
                         <div class="logo row">
                             <div class="logo-image">
                                 <img src="img/Ball.png" alt="Błąd wczytania logo!!" width="40">
                             </div>
                             <div class="logo-name">Wypozyczauto.eu</div>
                         </div>
-                    </a>
+                    </div>
                 </div>
-                <ul class="nav navbar-nav">
-                    <li ><a class="activeMy" href="#">start</a></li>
-                    <li><a href="#">wybierz samochód zastępczy</a></li>
-                    <li><a href="#">warunki najmu</a></li>
-                    <li><a href="#">kontakt</a></li>
-                </ul>
+                <div class="collapse navbar-collapse">
+                    <ul class="nav navbar-nav">
+                        <li class="dropdown">
+                            <a class="dropdown-toggle activeMy" data-toggle="dropdown" href="#">Start
+                                <span class="caret"></span></a>
+                            <ul class="dropdown-menu">
+                                <li><a href="#">Kasztan</a></li>
+                                <li><a href="#">Kasztana</a></li>
+                                <li><a href="#">Kasztanem</a></li>
+                                <li><a href="#">Pogania</a></li>
+                            </ul>
+                        </li>
+                        <li><a id="link2" href="#">wybierz samochód zastępczy</a></li>
+                        <li class="dropdown">
+                            <a id="link3" class="dropdown-toggle" data-toggle="dropdown" href="#">Warunki najmu</a>                        
+                        </li>
+                        <li><a id="link4" href="#">kontakt</a></li>
+                    </ul>
+                </div>
             </div>
         </nav>
         <img src="img/auto2.jpg" alt="Błąd wczytania auta" class="img-responsive">
-        <div class="row">           
+        <a href="#" class="scrollup"></a>
+        <div class="row"> 
+
             <div class="col-md-12">
                 <div class="title-image">
-                    <img src="img/Ball.png" alt="Błąd wczytania logo" width="40">
+                    <img src="img/Ball.png" alt="Błąd wczytania logo">
                 </div>
             </div>
             <div class="col-md-12">
-                <div class="title-description">wybierz samochód zastępczy</div>
+                <div id="wybierzAuto" class="title-description">wybierz samochód zastępczy</div>
             </div>
         </div>
-        <div class="row rowGallery">
- 
+        <div class="row rowGallery"> 
             <div class="col-md-4">
                 <div class="carContent row">
-                    <div class="carPhoto">
-                        <a href="img/auto.jpg"  data-lightbox="gallery" data-title="Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua.">
-                            <img src="img/auto.jpg" alt="Błąd wczytywania auta" >
-                        </a>
-                    </div>
-                    <div class="carDescription row">
-                        <div class="col-md-6 paddingLeft">
-                            <div class="col-md-12 nopadding">lamborghini</div>
-                            <div class="col-md-12 nopadding">aventador</div>
-                        </div>
-                        <div class="col-md-6 nopadding right">
-                            <div class="btn-wynajmij"><a href="#">wynajmij</a></div>
-                        </div>
-                    </div>
-                </div>
-            </div>
-             <div class="col-md-4">
-                <div class="carContent row">
-                    <div class="carPhoto">
+                    <div class="carPhoto ">
                         <a href="img/auto.jpg" data-lightbox="gallery" data-title="Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua.">
-                            <img src="img/auto.jpg" alt="Błąd wczytywania auta" >
+                            <img class="morph" src="img/auto.jpg" alt="Błąd wczytywania auta" >
+                            <i class="fa fa-search"></i>
                         </a>
                     </div>
                     <div class="carDescription row">
@@ -93,7 +103,26 @@
                             <div class="col-md-12 nopadding">aventador</div>
                         </div>
                         <div class="col-md-6 nopadding right">
-                            <div class="btn-wynajmij"><a href="#">wynajmij</a></div>
+                            <div class="btn-wynajmij"><a  class="hvr-bounce-to-right" href="#">wynajmij</a></div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+            <div class="col-md-4">
+                <div class="carContent row">
+                    <div class="carPhoto ">
+                        <a href="img/auto.jpg" data-lightbox="gallery" data-title="Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua.">
+                            <img class="morph" src="img/auto.jpg" alt="Błąd wczytywania auta" >
+                            <i class="fa fa-search"></i>
+                        </a>
+                    </div>
+                    <div class="carDescription row">
+                        <div class="col-md-6 paddingLeft">
+                            <div class="col-md-12 nopadding">lamborghini</div>
+                            <div class="col-md-12 nopadding">aventador</div>
+                        </div>
+                        <div class="col-md-6 nopadding right">
+                            <div class="btn-wynajmij"><a  class="hvr-pulse" href="#">wynajmij</a></div>
                         </div>
                     </div>
                 </div>
@@ -102,7 +131,8 @@
                 <div class="carContent row">
                     <div class="carPhoto">
                         <a href="img/auto.jpg"  data-lightbox="gallery" data-title="Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua.">
-                            <img src="img/auto.jpg" alt="Błąd wczytywania auta" >
+                            <img class="morph" src="img/auto.jpg" alt="Błąd wczytywania auta" >
+                            <i class="fa fa-search"></i>
                         </a>
                     </div>
                     <div class="carDescription row">
@@ -111,7 +141,7 @@
                             <div class="col-md-12 nopadding">aventador</div>
                         </div>
                         <div class="col-md-6 nopadding right">
-                            <div class="btn-wynajmij"><a href="#">wynajmij</a></div>
+                            <div class="btn-wynajmij "><a href="#" class="hvr-wobble-horizontal">wynajmij</a></div>
                         </div>
                     </div>
                 </div>
@@ -120,7 +150,10 @@
             <div class="col-md-4">
                 <div class="carContent row">
                     <div class="carPhoto">
-                        <img src="img/auto.jpg" alt="Błąd wczytywania auta">
+                        <a href="img/auto.jpg" data-lightbox="gallery" data-title="Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua.">
+                            <img class="morph" src="img/auto.jpg" alt="Błąd wczytywania auta" >
+                            <i class="fa fa-search"></i>
+                        </a>
                     </div>
                     <div class="carDescription row">
                         <div class="col-md-6 paddingLeft">
@@ -128,7 +161,7 @@
                             <div class="col-md-12 nopadding">aventador</div>
                         </div>
                         <div class="col-md-6 nopadding right">
-                            <div class="btn-wynajmij"><a href="#">wynajmij</a></div>
+                            <div class="btn-wynajmij"><a class="hvr-wobble-top" href="#">wynajmij</a></div>
                         </div>
                     </div>
                 </div>
@@ -136,7 +169,10 @@
             <div class="col-md-4">
                 <div class="carContent row">
                     <div class="carPhoto">
-                        <img src="img/auto.jpg" alt="Błąd wczytywania auta">
+                        <a href="img/auto.jpg"  data-lightbox="gallery" data-title="Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua.">
+                            <img class="morph" src="img/auto.jpg" alt="Błąd wczytywania auta" >
+                            <i class="fa fa-search"></i>
+                        </a>
                     </div>
                     <div class="carDescription row">
                         <div class="col-md-6 paddingLeft">
@@ -144,7 +180,7 @@
                             <div class="col-md-12 nopadding">aventador</div>
                         </div>
                         <div class="col-md-6 nopadding right">
-                            <div class="btn-wynajmij"><a href="#">wynajmij</a></div>
+                            <div class="btn-wynajmij"><a class="hvr-ripple-out" href="#">wynajmij</a></div>
                         </div>
                     </div>
                 </div>
@@ -152,7 +188,10 @@
             <div class="col-md-4">
                 <div class="carContent row">
                     <div class="carPhoto">
-                        <img src="img/auto.jpg" alt="Błąd wczytywania auta">
+                        <a href="img/auto.jpg"  data-lightbox="gallery" data-title="Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua.">
+                            <img class="morph" src="img/auto.jpg" alt="Błąd wczytywania auta" >
+                            <i class="fa fa-search"></i>
+                        </a>
                     </div>
                     <div class="carDescription row">
                         <div class="col-md-6 paddingLeft">
@@ -160,16 +199,16 @@
                             <div class="col-md-12 nopadding">aventador</div>
                         </div>
                         <div class="col-md-6 nopadding right">
-                            <div class="btn-wynajmij"><a href="#">wynajmij</a></div>
+                            <div class="btn-wynajmij"><a class="hvr-float-shadow"  href="#">wynajmij</a></div>
                         </div>
                     </div>
                 </div>
             </div>
         </div>
-        <div class="row">           
+        <div class="row container">           
             <div class="col-md-12">
                 <div class="title-image">
-                    <img src="img/Ball.png" alt="Błąd wczytania logo" width="40">
+                    <img class="morph" src="img/Ball.png" alt="Błąd wczytania logo" width="40">
                 </div>
             </div>
             <div class="col-md-12">
@@ -179,72 +218,85 @@
                 Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat. Duis aute irure dolor in reprehenderit in voluptate velit esse cillum dolore eu fugiat nulla pariatur. Excepteur sint occaecat cupidatat non proident, sunt in culpa qui officia deserunt mollit anim id est laborum.
             </p>  
             <div class="col-md-12">
-                <div class="btn-wynajmij centerTitle"><a href="#">dowiedz się więcej</a></div>
+                <div class="btn-wynajmij centerTitle"><a class="hvr-float-shadow"  href="#">dowiedz się więcej</a></div>
             </div>
         </div>    
         <footer>
-            <div class="row">
+            <div class="row container">
                 <div class="col-md-12">
                     <div class="title-image">
-                        <img src="img/Ball.png" alt="Błąd wczytania logo" width="40">
+                        <img class="morph" src="img/Ball.png" alt="Błąd wczytania logo" width="40">
                     </div>
                 </div>
                 <div class="col-md-12">
-                    <div class="title-description">kontakt</div>
+                    <div class="title-description" id="kontakt">kontakt</div>
                 </div>
             </div>
             <div class="row contactInformation">
-                <div class="col-md-4">
-                    <div class="col-md-2 positionLocation">
+                <div class="col-md-4 row">
+                    <div class="positionLocation">
                         <i class="icon-location"></i> 
                     </div>
-                    <div class="col-md-10">
+                    <div class="positionLocationData">
                         <div class="col-md-12">adres</div>
                         <div class="col-md-12">ulica powstańców</div>
                         <div class="col-md-12">500 na 800 warszawa</div>
                     </div>
-                </div>
-                <div class="col-md-4">
-                    <div class="col-md-2 positionPhone">
+                </div>  
+                <div class="col-md-4 row">
+                    <div class="positionPhone">
                         <i class="icon-phone" style=" font-size: 36px; color: #ee7b05;"></i> 
                     </div>
-                    <div class="col-md-10">
+                    <div class="positionPhoneData">
                         <div class="col-md-12">telefon</div>
-                        <div class="col-md-12">+48 555 555 555</div>
-                        <div class="col-md-12">+48 666 666 666</div>
+                        <div class="col-md-12"><a href="tel:+48555555555" class="decorate-none">+48 555 555 555</a></div>
+                        <div class="col-md-12"><a href="tel:+48777555777" class="decorate-none">+48 777 555 777</a></div>
                     </div>
-                </div>
-                <div class="col-md-4">
-                    <div class="col-md-2 positionMail">
+                </div> 
+                <div class="col-md-4 row">
+                    <div class="positionMail">
                         <i class="icon-mail-1"></i> 
                     </div>
-                    <div class="col-md-10">
+                    <div class="positionMailData">
                         <div class="col-md-12">mail</div>
-                        <div class="col-md-12">biuro@wypozyczauto.eu</div>
-                        <div class="col-md-12">zadzwon@wypozyczauto.eu</div>
+                        <div class="col-md-12"><a href="mailto:biuro@wypozyczauto.eu" class="decorate-none">biuro@wypozyczauto.eu</a></div>
+                        <div class="col-md-12"><a href="mailto:zadzwon@wypozyczauto.eu" class="decorate-none">zadzwon@wypozyczauto.eu</a></div>
                     </div>
                 </div>
-            </div>
-            <nav class="navbar navbar-default">
-                <div class="container-fluid">
-                    <div class="navbar-header">
-                        <div class="navbar-brand">
-                            <div class="logo row">
-                                <div class="logo-image">
-                                    <img src="img/Ball.png" alt="Błąd wczytania logo" width="30">
-                                </div>
-                                <div class="logo-name">Wypozyczauto.eu</div>
-                            </div>
-                        </div>
-                    </div>
-                    <ul class="nav navbar-nav">
-                        <li ><a href="#">start</a></li>
-                        <li><a href="#">wybierz samochód zastępczy</a></li>
-                        <li><a href="#">warunki najmu</a></li>
-                        <li><a href="#">kontakt</a></li>
-                    </ul>
-                </div>
-            </nav>
+            </div>          
+            <div class="CompanyName">©Reequest 2017</div>
         </footer>
+        <script>
+            jQuery(function ($)
+            {
+                //zresetuj scrolla
+                $.scrollTo(0);
+
+                $('#link2').click(function () {
+                    $.scrollTo($('#wybierzAuto'), 500);
+                });
+                $('#link3').click(function () {
+                    $.scrollTo($('#warunki'), 500);
+                });
+                $('#link4').click(function () {
+                    $.scrollTo($('#kontakt'), 500);
+                });
+
+
+                $('.scrollup').click(function () {
+                    $.scrollTo($('body'), 1000);
+                });
+            }
+            );
+
+            $(window).scroll(function ()
+            {
+                if ($(this).scrollTop() > 300)
+                    $('.scrollup').fadeIn();
+                else
+                    $('.scrollup').fadeOut();
+            }
+            );
+        </script>
     </body>
 </html>
